@@ -1,16 +1,24 @@
 import { defineConfig } from "cypress";
 
 export default defineConfig({
+  projectId: "ou84tn",
   e2e: {
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
     },
-    reporter: 'mochawesome',
+    reporter: 'junit',
     reporterOptions: {
-      charts: true,
+      mochaFile: 'results/my-test-output-[hash].xml',
       overwrite: false,
-      json: true,
-      reportDir: "cypress/reports"
-  }
+      toConsole: true,
+    }
+    // reporter: 'mochawesome',
+    // reporterOptions: {
+    //   charts: true,
+    //   overwrite: false,
+    //   json: true,
+    //   html: true,
+    //   reportDir: "cypress/reports"
+ // }
 });

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<testsuites failures="0" errors="0" tests="2" skipped="0">
+  <testsuite name="Root Suite" timestamp="2023-02-22T14:45:14" tests="1" file="cypress\e2e\basic.cy.ts" time="2.216" failures="0">
+    <testcase name="google test" time="0.694" classname="google test"/>
+  </testsuite>
+  <testsuite name="Root Suite" timestamp="2023-02-22T14:45:19" tests="1" file="cypress\e2e\logintest.cy.ts" time="2.483" failures="0">
+    <testcase name="login#test" time="0.866" classname="login#test"/>
+  </testsuite>
+</testsuites>
